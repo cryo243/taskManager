@@ -1,5 +1,5 @@
 <div class="main">
-    <div class="container">
+
         <!--<div>-->
         <!--<acme-navbar creation-date="main.creationDate"></acme-navbar>-->
         <!--</div>-->
@@ -12,7 +12,7 @@
                             <h3 class="panel-title">Please Sign In</h3>
                         </div>
                         <div class="panel-body">
-                            <form role="form">
+                            <form role="form" name="form" ng-submit="main.login(loginForm)">
                                 <fieldset>
                                     <div class="form-group">
                                         <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
@@ -35,5 +35,5 @@
             </div>
         </div>
     </div>
-</div>
+
 

@@ -1,13 +1,20 @@
 (function() {
-  'use strict';
+	'use strict';
 
-  angular
-    .module('tangent')
-    .controller('MainController', MainController);
+	angular
+		.module('tangent')
+		.controller('MainController', MainController);
 
-  /** @ngInject */
-  function MainController() {
-    var vm = this;
-    vm.form = [];
-  }
+	/** @ngInject */
+	function MainController() {
+		var vm = this;
+		vm.form = {};
+		vm.loginForm = function(form) {
+			if(form.$valid) {
+
+			}
+
+		}
+
+	}
 })();

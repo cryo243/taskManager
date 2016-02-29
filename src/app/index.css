@@ -1,31 +1,35 @@
-/**
-* import all the project sass files
-**/
-.main .container {
-  padding-top: 7rem; }
+/*
+Sass::SyntaxError: ".main" failed to @extend ".container".
+The selector ".container" was not found.
+Use "@extend .container !optional" if the extend should be able to fail.
 
-/**
- *  If you want to override some bootstrap variables, you have to change values here.
- *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
- */
-/**
- *  Do not remove the comments below. It's the markers used by wiredep to inject
- *  sass dependencies when defined in the bower.json of your dependencies
- */
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0; }
 
-.thumbnail {
-  height: 200px; }
-  .thumbnail img.pull-right {
-    width: 50px; }
-
-/**
- *  Do not remove the comments below. It's the markers used by gulp-inject to inject
- *  all your sass files automatically
- */
-
-/*# sourceMappingURL=index.css.map */
+Backtrace:
+main/main.scss:2
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/extend.rb:61:in `block in check_extends_fired!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/util/subset_map.rb:106:in `block in each_value'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/util/subset_map.rb:106:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/util/subset_map.rb:106:in `each_value'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/extend.rb:50:in `check_extends_fired!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/extend.rb:16:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/root_node.rb:39:in `css_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/engine.rb:295:in `render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/exec/sass_scss.rb:364:in `watch_or_update'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/bin/scss:13:in `<top (required)>'
+C:/Ruby193/bin/scss:23:in `load'
+C:/Ruby193/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Sass::SyntaxError: \".main\" failed to @extend \".container\".\A The selector \".container\" was not found.\A Use \"@extend .container !optional\" if the extend should be able to fail.\A "; }
