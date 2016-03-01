@@ -1,4 +1,7 @@
 .main{
   @extend .container;
     padding-top: 7rem;
+  .textfield-error{
+    color:red;
+  }
 }
