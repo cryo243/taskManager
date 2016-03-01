@@ -2,6 +2,5 @@
   'use strict';
 
   angular
-    .module('tangent', ['ngCookies', 'ngMessages', 'ui.router', 'ui.bootstrap', 'toastr']);
-
+    .module('tangent', ['ngCookies', 'ngMessages', 'ui.router', 'ui.bootstrap', 'toastr', 'ngResource']);
 })();

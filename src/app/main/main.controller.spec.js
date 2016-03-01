@@ -6,10 +6,18 @@
 
 
 		beforeEach(module('tangent'));
-
-		beforeEach(inject(function(_$controller_, _user_) {
+		beforeEach(function() {
+			angular.mock.module(function($provide) {
+				userService = jasmine.createSpyObj('userService', [ 'authenticate' ]);
+				$provide.value('user', userService);
+			});
+		});
+		beforeEach(inject(function(_$controller_, _$q_) {
+			var response = _$q_.defer();
+			userService.authenticate.and.returnValue(response .promise);
+			response.resolve({data:'values'});
 			vm = _$controller_('MainController');
-			userService = _user_;
+
 		}));
 		it('should initialize a formData object with empty fields', function() {
 			expect(vm.formData).toBeDefined();
@@ -21,10 +29,12 @@
 		});
 		describe('when the form is submitted and is $valid', function() {
 			it('should set the username', function() {
+				vm.formData.username = 'test';
+				vm.formData.password = 'tester';
 				var form = {
 					'$valid' : true
 				};
-				spyOn(userService, 'authenticate');
+				//spyOn(userService, 'authenticate');
 				vm.login(form);
 				expect(userService.authenticate).toHaveBeenCalledWith(vm.formData);
 			});

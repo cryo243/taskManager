@@ -1,0 +1,60 @@
+.dasboard-container {
+  padding: 20px; }
+  .dasboard-container div.pull-right {
+    margin-bottom: 20px; }
+
+.dashboard {
+  padding: 30px; }
+  .dashboard .box {
+    position: relative;
+    background: #ffffff;
+    border-top: 3px solid #00c0ef;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: none; }
+    .dashboard .box.box-primary {
+      border-top-color: #00c0ef;
+      border-right: 1px solid #d2d6de;
+      border-left: 1px solid #d2d6de; }
+    .dashboard .box .border-right {
+      border-right: 1px solid #d2d6de; }
+    .dashboard .box .border-left {
+      border-left: 1px solid #d2d6de; }
+  .dashboard .box-header {
+    color: #444;
+    display: block;
+    padding: 10px;
+    position: relative; }
+    .dashboard .box-header > .fa,
+    .dashboard .box-header > .glyphicon,
+    .dashboard .box-header > .ion,
+    .dashboard .box-header .box-title {
+      display: inline-block;
+      font-size: 18px;
+      margin: 0;
+      line-height: 1; }
+    .dashboard .box-header > .fa,
+    .dashboard .box-header > .glyphicon,
+    .dashboard .box-header > .ion {
+      margin-right: 5px; }
+    .dashboard .box-header > .box-tools {
+      position: absolute;
+      right: 10px;
+      top: 5px; }
+      .dashboard .box-header > .box-tools [data-toggle="tooltip"] {
+        position: relative; }
+      .dashboard .box-header > .box-tools.pull-right .dropdown-menu {
+        right: 0;
+        left: auto; }
+  .dashboard .btn-box-tool {
+    padding: 5px;
+    font-size: 12px;
+    background: transparent; }
+    .dashboard .btn-box-tool.btn:active {
+      box-shadow: none; }
+  .dashboard .box-body > .table {
+    margin-bottom: 0; }
+  .dashboard .box-input {
+    max-width: 200px; }
+
+/*# sourceMappingURL=dashboard.css.map */

@@ -1,0 +1,45 @@
+<div class="dasboard-container">
+    <div class="pull-right"> <button  ng-click="dashboard.signOut()">Sign out</button></div>
+    <div class="dashboard">
+
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">Latest Projects</h3>
+                <div class="box-tools pull-right">
+                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                </div>
+            </div><!-- /.box-header -->
+            <div class="box-body">
+                <div class="table-responsive">
+                    <table class="table no-margin">
+                        <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Start date</th>
+                            <th>Description</th>
+                            <th>Tasks</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="project in dashboard.projects">
+
+                            <td><span>{{project.title}}</span></td>
+                            <td><span class="label label-success">{{project.start_date}}</span></td>
+                            <td>{{project.description}}</td>
+                            <td>
+                                <span ng-repeat="task in project.task_set">{{task.title + ' | '}}</span>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div><!-- /.table-responsive -->
+            </div><!-- /.box-body -->
+            <div class="box-footer clearfix">
+                <a href="#" class="btn btn-sm btn-info btn-flat pull-left">Add new project</a>
+            </div><!-- /.box-footer -->
+        </div><!-- /.box -->
+    </div>
+
+</div>

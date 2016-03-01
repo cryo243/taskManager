@@ -1,0 +1,105 @@
+.dasboard-container {
+  padding : 20px;
+  div.pull-right {
+    margin-bottom: 20px;
+  }
+}
+.dashboard {
+  padding: 30px;
+  .box {
+    position: relative;
+    background: #ffffff;
+    border-top: 3px solid #00c0ef;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: none;
+
+    // Box color variations
+    &.box-primary {
+      border-top-color: #00c0ef;
+      border-right: 1px solid #d2d6de;
+      border-left: 1px solid #d2d6de;
+    }
+    .border-right {
+      border-right: 1px solid #d2d6de;
+    }
+    .border-left {
+      border-left: 1px solid #d2d6de;
+    }
+  }
+
+  //Add clearfix to header, body and footer
+  .box-header,
+  .box-body,
+  .box-footer {
+
+  }
+
+  //Box header
+  .box-header {
+    color: #444;
+    display: block;
+    padding: 10px;
+    position: relative;
+
+
+    //Icons and box title
+    > .fa,
+    > .glyphicon,
+    > .ion,
+    .box-title {
+      display: inline-block;
+      font-size: 18px;
+      margin: 0;
+      line-height: 1;
+    }
+    > .fa,
+    > .glyphicon,
+    > .ion {
+      margin-right: 5px;
+    }
+    > .box-tools {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      [data-toggle="tooltip"] {
+        position: relative;
+      }
+
+      &.pull-right {
+        .dropdown-menu {
+          right: 0;
+          left: auto;
+        }
+      }
+    }
+  }
+
+  //Box Tools Buttons
+  .btn-box-tool {
+    padding: 5px;
+    font-size: 12px;
+    background: transparent;
+
+    .open &,
+    &:hover {
+
+    }
+    &.btn:active {
+      box-shadow: none;
+    }
+  }
+  //Box Body
+  .box-body {
+
+    // Tables within the box body
+    > .table {
+      margin-bottom: 0;
+    }
+
+  }
+  //Input in box
+  .box-input {
+    max-width: 200px;
+  }
+}
